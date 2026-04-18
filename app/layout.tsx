@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Syne, DM_Sans, Space_Mono } from 'next/font/google';
 import './globals.css';
 
+// Syne is a variable font — all weights (400–800) load by default; no explicit weight needed
 const display = Syne({
   subsets: ['latin'],
   variable: '--font-display',

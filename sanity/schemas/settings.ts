@@ -16,8 +16,8 @@ export default defineType({
         defineArrayMember({
           type: 'object',
           fields: [
-            defineField({ name: 'label', type: 'string' }),
-            defineField({ name: 'url', type: 'url' }),
+            defineField({ name: 'label', type: 'string', title: 'Label', validation: (r) => r.required() }),
+            defineField({ name: 'url', type: 'url', title: 'URL', validation: (r) => r.required() }),
           ],
           preview: {
             select: { title: 'label', subtitle: 'url' },
